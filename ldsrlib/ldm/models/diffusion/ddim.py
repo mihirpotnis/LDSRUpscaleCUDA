@@ -151,7 +151,6 @@ class DDIMSampler(object):
                                       unconditional_guidance_scale=unconditional_guidance_scale,
                                       unconditional_conditioning=unconditional_conditioning)
             img, pred_x0 = outs
-            print('outofpsample')
             if callback: callback(i)
             if img_callback: img_callback(pred_x0, i)
 
